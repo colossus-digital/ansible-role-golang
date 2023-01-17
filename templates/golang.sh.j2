@@ -4,6 +4,7 @@
 
 export GOROOT='{{ golang_install_dir }}'
 export PATH=$GOROOT/bin:$PATH
+export GO111MODULE=on
 
 {% if golang_gopath not in (None, '') %}
 export GOPATH="{{ golang_gopath }}"
